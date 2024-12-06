@@ -15,22 +15,29 @@ export const OccupancyChart = () => {
       <BarChart data={data}>
         <XAxis
           dataKey="name"
-          stroke="#888888"
+          stroke="#D1D5DB"
           fontSize={12}
           tickLine={false}
           axisLine={false}
         />
         <YAxis
-          stroke="#888888"
+          stroke="#D1D5DB"
           fontSize={12}
           tickLine={false}
           axisLine={false}
           tickFormatter={(value) => `${value}%`}
         />
-        <Tooltip />
+        <Tooltip 
+          contentStyle={{ 
+            backgroundColor: '#1E293B',
+            border: 'none',
+            borderRadius: '8px',
+            color: '#FFFFFF'
+          }}
+        />
         <Bar
           dataKey="value"
-          fill="#4CAF50"
+          fill="#10B981"
           radius={[4, 4, 0, 0]}
         />
       </BarChart>

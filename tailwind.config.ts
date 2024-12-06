@@ -20,21 +20,25 @@ export default {
     extend: {
       colors: {
         navy: {
-          DEFAULT: "#0A192F",
-          light: "#172A46",
+          DEFAULT: "#0C1C2D",
+          light: "#1E293B",
         },
         charcoal: {
-          DEFAULT: "#121212",
+          DEFAULT: "#181818",
           light: "#1E293B",
         },
         gold: {
-          DEFAULT: "#FFD700",
-          light: "#FFE44D",
+          DEFAULT: "#FBBF24",
+          light: "#FCD34D",
         },
         emerald: {
-          DEFAULT: "#4CAF50",
-          light: "#66BB6A",
+          DEFAULT: "#10B981",
+          light: "#34D399",
         },
+        text: {
+          primary: "#FFFFFF",
+          secondary: "#D1D5DB",
+        }
       },
       keyframes: {
         "fade-in": {

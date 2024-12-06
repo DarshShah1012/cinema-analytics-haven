@@ -16,25 +16,32 @@ export const RevenueChart = () => {
       <LineChart data={data}>
         <XAxis
           dataKey="name"
-          stroke="#888888"
+          stroke="#D1D5DB"
           fontSize={12}
           tickLine={false}
           axisLine={false}
         />
         <YAxis
-          stroke="#888888"
+          stroke="#D1D5DB"
           fontSize={12}
           tickLine={false}
           axisLine={false}
           tickFormatter={(value) => `$${value}`}
         />
-        <Tooltip />
+        <Tooltip 
+          contentStyle={{ 
+            backgroundColor: '#1E293B',
+            border: 'none',
+            borderRadius: '8px',
+            color: '#FFFFFF'
+          }}
+        />
         <Line
           type="monotone"
           dataKey="value"
-          stroke="#FFD700"
+          stroke="#FBBF24"
           strokeWidth={2}
-          dot={{ fill: "#FFD700" }}
+          dot={{ fill: "#FBBF24" }}
         />
       </LineChart>
     </ResponsiveContainer>
